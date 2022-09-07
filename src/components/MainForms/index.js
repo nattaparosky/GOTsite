@@ -1,6 +1,7 @@
 import './MainForm.css';
 import TextBox from '../TextBox';
 import MainDropdown from '../MainDropdown';
+import MainButton from '../MainButton';
 
 const houses = [
     'Arryn',
@@ -21,6 +22,7 @@ const MainForm = () => {
             <TextBox label="House" placeholder="e.g. House Lannister"/>
             <TextBox label="Image" placeholder="URL image"/>
             <MainDropdown label="Houses/Families" itens={houses}/>
+            <MainButton> Add </MainButton>
             </form>
         </section>
     )
