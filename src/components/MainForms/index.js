@@ -1,14 +1,26 @@
 import './MainForm.css';
 import TextBox from '../TextBox';
+import MainDropdown from '../MainDropdown';
+
+const houses = [
+    'Arryn',
+    'Baratheon',
+    'Greyjoy',
+    'Lannister',
+    'Martell',
+    'Stark',
+    'Targaryen'
+]
 
 const MainForm = () => {
     return (
         <section className='main-form'>
             <form>
-                <h2>Add your favorite Game of Thrones Character</h2>
+                <h2>Add Game of Thrones character</h2>
             <TextBox label="Name" placeholder="Character full name" />
             <TextBox label="House" placeholder="e.g. House Lannister"/>
             <TextBox label="Image" placeholder="URL image"/>
+            <MainDropdown label="Houses/Families" itens={houses}/>
             </form>
         </section>
     )
