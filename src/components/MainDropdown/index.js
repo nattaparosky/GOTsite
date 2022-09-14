@@ -4,7 +4,9 @@ const MainDropdown = (props) => {
     return (
         <div className='main-dropdown'>
             <label>{props.label}</label>
-            <select>
+            <select onChange={event => props.whenChanged(event.target.value)}
+                    required = {props.requiredinfo}
+                    value={props.value}>
                 {props.itens.map(item => 
                     <option key={item}>{item}</option>)}
             </select>
