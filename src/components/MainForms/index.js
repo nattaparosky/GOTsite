@@ -4,7 +4,7 @@ import MainDropdown from '../MainDropdown';
 import MainButton from '../MainButton';
 import { useState } from 'react';
 
-const MainForm = () => {
+const MainForm = (props) => {
 
 const houses = [
     'Arryn',
@@ -22,7 +22,11 @@ const [housesandfamilies, setHousesAndFamilies] = useState('')
 
 const savedButton = (event) => {
     event.preventDefault()
-    console.log('Submmitted form', name, image, housesandfamilies)
+    props.registeredName({
+        name,
+        image,
+        housesandfamilies
+    })
 }
 
     return (
