@@ -48,7 +48,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <MainForm registeredName={character => inputNewCharacter(character)}/>
+      <MainForm houses={families.map(family => family.houses)} registeredName={character => inputNewCharacter(character)}/>
       {families.map(family => <Houses key={family.houses} 
                                       houses={family.houses} 
                                       mainColor={family.mainColor} 

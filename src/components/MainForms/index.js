@@ -6,15 +6,6 @@ import { useState } from 'react';
 
 const MainForm = (props) => {
 
-const houses = [
-    'Arryn',
-    'Baratheon',
-    'Lannister',
-    'Martell',
-    'Stark',
-    'Targaryen'
-]
-
 const [name, setName] = useState('')
 const [image, setimage] = useState('')
 const [housesandfamilies, setHousesAndFamilies] = useState('')
@@ -48,7 +39,7 @@ const savedButton = (event) => {
                      whenChanged={value => setimage(value)}/>
             <MainDropdown requiredinfo={true} 
                           label="Houses/Families" 
-                          itens={houses}
+                          itens={props.houses}
                           value={housesandfamilies}
                           whenChanged={value => setHousesAndFamilies(value)}/>
             <MainButton> Add </MainButton>
