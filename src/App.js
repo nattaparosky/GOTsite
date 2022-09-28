@@ -9,22 +9,22 @@ function App() {
     {
       houses: 'Arryn',
       mainColor: '#101929',
-      secondColor: '#DED9BF',
+      secondColor: '#758BB1',
     },
     {
       houses: 'Baratheon',
       mainColor: '#F3C114',
-      secondColor: '#DED9BF',
+      secondColor: '#FEE796',
     },
     {
       houses: 'Lannister',
-      mainColor: '#86090A',
-      secondColor: '#C1AC79',
+      mainColor: '#C1AC79',
+      secondColor: '#86090A',
     },
     {
       houses: 'Martell',
       mainColor: '#E37D16',
-      secondColor: '#DED9BF',
+      secondColor: '#F1B87F',
     },
     {
       houses: 'Stark',
@@ -33,8 +33,8 @@ function App() {
     },
     {
       houses: 'Targaryen',
-      mainColor: '#AE1C22 ',
-      secondColor: '#262626',
+      mainColor: '#262626 ',
+      secondColor: '#AE1C22',
     }
   ]
 
