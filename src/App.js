@@ -52,7 +52,8 @@ function App() {
       {families.map(family => <Houses key={family.houses} 
                                       houses={family.houses} 
                                       mainColor={family.mainColor} 
-                                      secondColor={family.secondColor}/>)}
+                                      secondColor={family.secondColor}
+                                      characters={characters.filter(character => character.housesandfamilies === family.houses)}/>)}
     </div>
   );
 }

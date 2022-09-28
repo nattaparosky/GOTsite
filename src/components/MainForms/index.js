@@ -17,6 +17,9 @@ const savedButton = (event) => {
         image,
         housesandfamilies
     })
+    setName('')
+    setimage('')
+    setHousesAndFamilies('')
 }
 
     return (
