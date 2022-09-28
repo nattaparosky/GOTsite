@@ -9,7 +9,6 @@ const MainForm = (props) => {
 const houses = [
     'Arryn',
     'Baratheon',
-    'Greyjoy',
     'Lannister',
     'Martell',
     'Stark',
