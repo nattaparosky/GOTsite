@@ -1,9 +1,9 @@
 import './Character.css'
 
-const Character = ({name, image}) => {
+const Character = ({name, image, cardColor}) => {
     return (
     <div className='character'>
-        <div className='up'>
+        <div className='up' style={{ backgroundColor: cardColor }}>
             <img src={image} alt={name}/>
         </div>
         <div className='down'>

@@ -41,7 +41,6 @@ function App() {
   const [characters, setCharacter] = useState([])
 
   const inputNewCharacter = (character) => {
-    console.log(character)
     setCharacter([...characters, character])
   }
 
